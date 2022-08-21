@@ -6,12 +6,11 @@ export class Task {
     @PrimaryGeneratedColumn('uuid')
     id: string;
 
-    @Column({
-        type: 'text',
-        nullable: false
-    })
-    description: string;
+    @Column('text', { unique: true })
+    title: string;
 
+    @Column('text')
+    description?: string;
 
     @CreateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
     createdAt: Date;

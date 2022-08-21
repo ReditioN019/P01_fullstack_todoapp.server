@@ -41,7 +41,7 @@ export class TasksService {
   async findOne(id: string) {
 
     const task = await this.taskRespository.findOneBy({ id })
-    if (!task) throw new NotFoundException(`Task with id ${id} not found`);
+    if (!task) throw new NotFoundException(`No se encontró la tarea con id: ${id}`);
 
     return task;
   }
@@ -53,7 +53,7 @@ export class TasksService {
       ...updateTaskDto
     });
 
-    if (!task) throw new NotFoundException(`Task with id ${id} not found`);
+    if (!task) throw new NotFoundException(`No se encontró la tarea con id: ${id}`);
 
     try {
       await this.taskRespository.save(task);

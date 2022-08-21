@@ -3,8 +3,13 @@ import { IsBoolean, IsDate, IsOptional, IsString, MinDate, MinLength } from "cla
 
 export class CreateTaskDto {
     
+
     @IsString()
-    description: string;
+    title: string;
+
+    @IsString()
+    @IsOptional()
+    description?: string;
     
     @IsDate()
     @Type(() => Date)
