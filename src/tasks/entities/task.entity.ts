@@ -7,10 +7,7 @@ export class Task {
     id: string;
 
     @Column('text', { unique: true })
-    title: string;
-
-    @Column('text')
-    description?: string;
+    description: string;
 
     @CreateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
     createdAt: Date;
