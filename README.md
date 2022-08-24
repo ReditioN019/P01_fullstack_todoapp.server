@@ -5,8 +5,6 @@
 # TODO API
 # PASOS DE EJECUCIÓN: 
 
-ejecutado para evaluación**;
-
 1. Clonar Proyecto
 2. Ejecutar  ```yarn install```
 3. Clonar el arhivo ```.env.template``` y renombrar a ```.env```
