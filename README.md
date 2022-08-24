@@ -3,9 +3,8 @@
 </p>
 
 # TODO API
-# HAY QUE HACER LOS PASOS DE EJECUCIÓN: 
+# PASOS DE EJECUCIÓN: 
 
-**entregar todas las instrucciones para que su repositorio pueda ser
 ejecutado para evaluación**;
 
 1. Clonar Proyecto
