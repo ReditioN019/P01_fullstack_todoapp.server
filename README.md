@@ -3,10 +3,7 @@
 </p>
 
 # TODO API
-# HAY QUE HACER LOS PASOS DE EJECUCIÓN: 
-
-**entregar todas las instrucciones para que su repositorio pueda ser
-ejecutado para evaluación**;
+# PASOS DE EJECUCIÓN: 
 
 1. Clonar Proyecto
 2. Ejecutar  ```yarn install```
