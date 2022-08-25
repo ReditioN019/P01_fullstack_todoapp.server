@@ -17,9 +17,11 @@ export class CreateTaskDto {
     @MinDate(new Date())
     expirationDate: Date;
 
-
     @IsBoolean()
     @IsOptional()
     completed?: boolean;
 
+    @IsBoolean()
+    @IsOptional()
+    isChecked?: boolean;
 }
