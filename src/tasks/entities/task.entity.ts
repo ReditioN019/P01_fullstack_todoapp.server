@@ -6,7 +6,7 @@ export class Task {
     @PrimaryGeneratedColumn('uuid')
     id: string;
 
-    @Column('text', { unique: true })
+    @Column('text')
     description: string;
 
     @CreateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })

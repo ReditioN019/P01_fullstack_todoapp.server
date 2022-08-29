@@ -26,7 +26,6 @@ export class TasksService {
       const task = this.taskRespository.create(createTaskDto);
       
       await this.taskRespository.save(task); //guardo la nueva tarea en la BD
-      console.log("Nueva tarea creada: ", task);
       return task;
 
     } catch (error) {
@@ -57,7 +56,6 @@ export class TasksService {
 
     try {
       await this.taskRespository.save(task);
-      console.log(task.expirationDate);
       return task;
     } catch (error) {
       this.handleDBExceptions(error)
