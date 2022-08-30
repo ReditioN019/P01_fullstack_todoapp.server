@@ -18,6 +18,8 @@ async function bootstrap() {
     })
   );
 
-  await app.listen(process.env.PORT);
+  process.env.STAGE === 'prod' 
+  ? await app.listen(process.env.PORT)
+  : await app.listen(3000);
 }
 bootstrap();
